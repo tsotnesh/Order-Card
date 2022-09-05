@@ -1,0 +1,213 @@
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: hsl(225deg, 100%, 94%);
+}
+
+.main-card {
+  margin: 0 auto;
+  margin-top: 70px;
+  background-color: hsl(225deg, 100%, 98%);
+  max-width: 450px;
+  width: 100%;
+  height: 550px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-card .main-card-photo {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.main-card .card-header {
+  margin-top: 25px;
+  font-size: 26px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+.main-card .card-text {
+  margin-top: 20px;
+  width: 250px;
+  color: gray;
+  font-size: 17px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+.main-card .price-block {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 300px;
+  height: 50px;
+  background-color: hsl(225deg, 100%, 94%);
+  border-radius: 10px;
+  position: relative;
+}
+.main-card .price-block .icon {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+}
+.main-card .price-block .annual-plan {
+  position: absolute;
+  top: 5px;
+  left: 66px;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+.main-card .price-block .price-year {
+  position: absolute;
+  bottom: 5px;
+  left: 66px;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  color: gray;
+}
+.main-card .price-block .change-parameters {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  color: hsl(245deg, 75%, 52%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  cursor: pointer;
+}
+.main-card .button {
+  margin-top: 15px;
+  width: 300px;
+  height: 50px;
+  background-color: hsl(245deg, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 15px 10px -15px hsl(224deg, 23%, 55%);
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.main-card .button .btn-text {
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  color: antiquewhite;
+}
+.main-card .button:hover {
+  background-color: hsl(223deg, 47%, 23%);
+}
+.main-card .cancel-order {
+  font-size: 16px;
+  margin-top: 10px;
+  Color: gray;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+  .main-card {
+    width: 300px;
+    height: 450px;
+  }
+  .main-card .card-header {
+    font-size: 18px;
+  }
+  .main-card .card-text {
+    margin-left: 44px;
+    font-size: 14px;
+  }
+  .main-card .button {
+    width: 200px;
+  }
+  .main-card .button .btn-text {
+    font-size: 13px;
+  }
+  .main-card .cancel-order {
+    font-size: 13px;
+  }
+  .main-card .price-block {
+    width: 200px;
+  }
+  .main-card .price-block .icon {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+  }
+  .main-card .price-block .annual-plan {
+    position: absolute;
+    top: 5px;
+    left: 66px;
+    font-size: 12px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+  }
+  .main-card .price-block .price-year {
+    position: absolute;
+    bottom: 5px;
+    left: 66px;
+    font-size: 12px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    color: gray;
+  }
+  .main-card .price-block .change-parameters {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    color: hsl(245deg, 75%, 52%);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=global.css.map */
